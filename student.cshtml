@@ -1,10 +1,6 @@
 ﻿@model FileClass
 @{ Layout = null; }
-<form asp-controller="Files" asp-action="Index" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" />
-    <hr />
-    <button type="submit"> Upload</button>
-</form>
+
 @if (Model != null)
 {
 <hr />
@@ -26,9 +22,11 @@
                 <a href="../Files/Index?filename=@file.Name" style="margin-right:10px;">Current Page</a>
                 <a href="../Files/PDFViewerNewTab?filename=@file.Name" target="_blank">New Tab</a>
             </td>
-        </tr>}
+        </tr>
+}
                     </tbody>
-                </table>}
+                </table>
+}
 
 <br />
 <br />

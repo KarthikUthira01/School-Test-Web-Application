@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SchoolOnlineExamination.Models
+namespace UploadFile2.Models
 {
     public class FileClass
     {
@@ -13,6 +13,6 @@ namespace SchoolOnlineExamination.Models
 
         public string path { get; set; } = "";
 
-        public List<FileClass> Teacher { get; set; } = new List<FileClass>();
+        public List<FileClass> Files { get; set; } = new List<FileClass>();
     }
 }
